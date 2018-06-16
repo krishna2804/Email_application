@@ -21,7 +21,7 @@ public class Email {
 	}
 	
 	//Ask for department
-	private String setDepartment() 
+	private String setDepartment()
 	{
 		System.out.println("Please select your department:");
 		System.out.print("1-student\n2-faculty\n3-administration\n4-guest");
