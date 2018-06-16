@@ -23,6 +23,8 @@ public class Email {
 		
 		password=setPassword(length);
 		System.out.println("password name:"+password);
+		
+		
 
 		
 	}
