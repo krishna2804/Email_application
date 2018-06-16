@@ -10,6 +10,8 @@ public class Email {
 	private String department;
 	private int mailbox_Capacity;
 	private String alternate_mail;
+	private String companysuffix=".company.com";
+	private String email;
 	
 	//firstname and lastname
 	public Email(String firstname,String lastname)
@@ -24,7 +26,10 @@ public class Email {
 		password=setPassword(length);
 		System.out.println("password name:"+password);
 		
+		// creating email
+		email=first_name.toLowerCase()+"."+last_name.toLowerCase()+"@"+department+companysuffix;
 		
+		System.out.print(email);
 
 		
 	}
@@ -69,8 +74,8 @@ public class Email {
 			//System.out.println("passitem=="+passwd[i]);
 
 		}
-		String newpass=passwd.toString();
-		return newpass;
+		
+		return new String(passwd);
 		
 		
 		
